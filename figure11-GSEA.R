@@ -40,7 +40,7 @@ for(i in files){
 	dimnames=list(rownames(exp),colnames(exp))
 	data=matrix(as.numeric(as.matrix(exp)),nrow=nrow(exp),dimnames=dimnames)
 	data=avereps(data)
-	#É¾³ýÕý³£ÑùÆ·
+	#Ã‰Â¾Â³Ã½Ã•Ã½Â³Â£Ã‘Ã¹Ã†Â·
 	group=sapply(strsplit(colnames(data),"\\-"),"[",4)
 	group=sapply(strsplit(group,""),"[",1)
 	group=gsub("2","1",group)
